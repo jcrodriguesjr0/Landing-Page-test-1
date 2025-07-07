@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDCA na Prática – Curso de Gestão com Resultados Reais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #1E2A38; /* Azul-escuro para texto padrão */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .hero-bg {
+            background-color: #1E2A38;
+            /* Imagem de fundo sutil - substitua 'your-image-url.jpg' pela URL da sua imagem */
+            background-image: linear-gradient(rgba(30, 42, 56, 0.85), rgba(30, 42, 56, 0.85)), url('https://placehold.co/1920x1080/1E2A38/FFFFFF?text=Gestão+Sutil');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            background-color: #007BFF; /* Azul claro */
+            color: #FFFFFF; /* Branco */
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Azul claro mais escuro */
+        }
+        .btn-secondary {
+            background-color: #FFC107; /* Amarelo */
+            color: #1E2A38; /* Azul-escuro */
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #e0a800; /* Amarelo mais escuro */
+        }
+        .card-icon {
+            color: #007BFF; /* Azul claro */
+        }
+        .highlight-yellow {
+            color: #FFC107; /* Amarelo */
+        }
+        /* Custom scrollbar for better aesthetics (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA; /* Cinza-claro */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #007BFF; /* Azul claro */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 flex items-center justify-center text-2xl">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="toTopBtn" class="fixed bottom-20 right-5 z-50 bg-slate-700 text-white p-3 rounded-full shadow-lg hover:bg-slate-600 transition-opacity duration-300 opacity-0 text-xl">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <section id="hero" class="hero-bg text-white min-h-screen flex flex-col justify-center items-center text-center py-20 px-6">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Transforme sua Gestão com o Método que Funciona
+            </h1>
+            <p class="text-xl sm:text-2xl mb-4 font-semibold text-gray-200">
+                <i class="fas fa-briefcase mr-2"></i>Curso 100% Online | Aplique o PDCA na Prática
+            </p>
+            <p class="text-lg sm:text-xl mb-10 text-gray-300">
+                Pare de apagar incêndios. Aprenda a gerenciar com clareza, foco e resultados sustentáveis.
+            </p>
+            <a href="#oferta" class="btn-primary font-bold py-4 px-10 rounded-lg text-xl shadow-md hover:shadow-lg transform hover:scale-105">
+                <i class="fas fa-rocket mr-2"></i> Quero Acessar o Curso
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre-curso" class="py-16 sm:py-24 bg-gray-100 px-6">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-8">O que é o "PDCA na Prática"?</h2>
+            <p class="text-lg text-slate-700 mb-12 leading-relaxed max-w-3xl mx-auto">
+                Um curso direto ao ponto para quem quer aplicar o ciclo PDCA de forma simples, objetiva e funcional.
+                Sem enrolação, sem teorias desnecessárias. Aqui você aprende a planejar, executar, verificar e agir com inteligência para transformar processos e atingir resultados reais.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-icon text-3xl mb-4"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Aulas rápidas e práticas</h3>
+                    <p class="text-slate-600">Conteúdo focado no essencial para você aplicar imediatamente.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-icon text-3xl mb-4"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Exemplos reais e aplicáveis</h3>
+                    <p class="text-slate-600">Cases e situações do dia a dia para facilitar o aprendizado.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-icon text-3xl mb-4"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Ferramentas Complementares</h3>
+                    <p class="text-slate-600">Aprenda 5W2H, SMART, Ishikawa, 5 Porquês e mais.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-icon text-3xl mb-4"><i class="fas fa-building"></i></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Para qualquer setor/porte</h3>
+                    <p class="text-slate-600">O PDCA é versátil e se adapta à sua realidade.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-icon text-3xl mb-4"><i class="fas fa-laptop-house"></i></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Acesso imediato e flexível</h3>
+                    <p class="text-slate-600">Estude quando e onde quiser, no seu ritmo.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-icon text-3xl mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Resultados Sustentáveis</h3>
+                    <p class="text-slate-600">Crie uma cultura de melhoria contínua e resultados duradouros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instrutor" class="py-16 sm:py-24 bg-white px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/3 text-center mb-8 md:mb-0">
+                    <img src="https://placehold.co/300x300/007BFF/FFFFFF?text=João+Junior" alt="Foto de João Junior" class="rounded-full w-48 h-48 sm:w-60 sm:h-60 mx-auto shadow-lg border-4 border-blue-600">
+                </div>
+                <div class="md:w-2/3 text-slate-800">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center md:text-left">Conheça o seu Instrutor: João Junior</h2>
+                    <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                        Consultor empresarial com <strong>14 anos de experiência</strong> e mais de <strong>400 projetos atendidos</strong>.
+                        Já aplicou o PDCA em empresas como <span class="font-semibold text-blue-600">BMW, Arezzo e Carrefour</span> — agora, compartilha esse método validado e poderoso com você.
+                    </p>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start"><i class="fas fa-check-circle highlight-yellow mr-3 mt-1 text-xl"></i>Especialista em crescimento empresarial com foco em lucro.</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle highlight-yellow mr-3 mt-1 text-xl"></i>Experiência com indústrias, varejo e serviços de diversos portes.</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle highlight-yellow mr-3 mt-1 text-xl"></i>Linguagem acessível, prática e direta ao ponto, sem jargões complexos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="para-quem" class="py-16 sm:py-24 bg-gray-100 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-12">Esse curso é <span class="text-blue-600">ideal para você</span> se...</h2>
+            <div class="grid sm:grid-cols-2 gap-x-12 gap-y-6 text-left text-lg text-slate-700">
+                <div class="flex items-start p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-check text-2xl text-green-500 mr-4 mt-1"></i>
+                    <span>Está cansado de metas que não são cumpridas e resultados que não aparecem.</span>
+                </div>
+                <div class="flex items-start p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-check text-2xl text-green-500 mr-4 mt-1"></i>
+                    <span>Precisa organizar seus processos e parar de apagar incêndios constantemente.</span>
+                </div>
+                <div class="flex items-start p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-check text-2xl text-green-500 mr-4 mt-1"></i>
+                    <span>Lidera equipes e quer aumentar a produtividade e o engajamento do time.</span>
+                </div>
+                <div class="flex items-start p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-check text-2xl text-green-500 mr-4 mt-1"></i>
+                    <span>Quer aplicar um método validado em empresas reais para tomar decisões mais assertivas.</span>
+                </div>
+                <div class="flex items-start p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-check text-2xl text-green-500 mr-4 mt-1"></i>
+                    <span>Busca uma gestão mais profissional, estratégica e menos caótica no dia a dia.</span>
+                </div>
+                <div class="flex items-start p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-check text-2xl text-green-500 mr-4 mt-1"></i>
+                    <span>Deseja ter mais controle sobre suas atividades e alcançar objetivos de forma consistente.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="o-que-receber" class="py-16 sm:py-24 bg-slate-800 text-white px-6">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12">O que você <span class="highlight-yellow">leva</span> ao se inscrever?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-slate-700 p-6 rounded-lg shadow-xl hover:bg-slate-600 transition-colors duration-300">
+                    <div class="text-yellow-400 text-3xl mb-4"><i class="fas fa-video"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Curso completo com 5 módulos</h3>
+                    <p class="text-gray-300">Do zero à aplicação avançada do PDCA, passo a passo.</p>
+                </div>
+                <div class="bg-slate-700 p-6 rounded-lg shadow-xl hover:bg-slate-600 transition-colors duration-300">
+                    <div class="text-yellow-400 text-3xl mb-4"><i class="fas fa-file-excel"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Planilhas e Templates</h3>
+                    <p class="text-gray-300">Checklists e ferramentas prontas para usar e adaptar.</p>
+                    </div>
+                <div class="bg-slate-700 p-6 rounded-lg shadow-xl hover:bg-slate-600 transition-colors duration-300">
+                    <div class="text-yellow-400 text-3xl mb-4"><i class="fas fa-clipboard-list"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Estudo de Caso + Projeto Final</h3>
+                    <p class="text-gray-300">Aplique o conhecimento em um projeto prático e consolidado.</p>
+                </div>
+                <div class="bg-slate-700 p-6 rounded-lg shadow-xl hover:bg-slate-600 transition-colors duration-300">
+                    <div class="text-yellow-400 text-3xl mb-4"><i class="fas fa-certificate"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Certificado de Conclusão</h3>
+                    <p class="text-gray-300">Reconhecimento formal da sua nova habilidade em gestão.</p>
+                </div>
+                <div class="bg-slate-700 p-6 rounded-lg shadow-xl hover:bg-slate-600 transition-colors duration-300">
+                    <div class="text-yellow-400 text-3xl mb-4"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Suporte em Grupo Exclusivo</h3>
+                    <p class="text-gray-300">Tire dúvidas e interaja com outros alunos e o instrutor.</p>
+                </div>
+                 <div class="bg-slate-700 p-6 rounded-lg shadow-xl hover:bg-slate-600 transition-colors duration-300">
+                    <div class="text-yellow-400 text-3xl mb-4"><i class="fas fa-infinity"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Acesso Vitalício</h3>
+                    <p class="text-gray-300">Reveja as aulas e materiais sempre que precisar, sem pressa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta" class="py-16 sm:py-24 bg-gray-100 px-6">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">Condições Especiais por <span class="text-blue-600">Tempo Limitado!</span></h2>
+            <p class="text-lg text-slate-700 mb-8">
+                Aproveite o preço de pré-lançamento exclusivo. Invista na sua carreira e transforme sua gestão com um método comprovado.
+            </p>
+            <div class="bg-white p-8 sm:p-12 rounded-xl shadow-2xl border-t-8 border-blue-600">
+                <p class="text-2xl text-slate-600 line-through mb-2">De <span class="font-bold">R$ 2.997</span></p>
+                <p class="text-slate-800 mb-1 text-xl">Por apenas</p>
+                <p class="text-5xl sm:text-6xl font-bold text-blue-600 mb-2">R$ 1.497<span class="text-2xl align-top"> à vista</span></p>
+                <p class="text-xl text-slate-700 mb-8">ou em até <span class="font-bold text-blue-600">12x de R$ 149,70</span> no cartão</p>
+
+                <p class="text-md text-slate-600 mb-8"><i class="fas fa-lock mr-2"></i> Ambiente de pagamento 100% seguro. Acesso vitalício e imediato após a confirmação.</p>
+
+                <a href="#kiwify-checkout-link" class="btn-primary w-full sm:w-auto font-bold py-5 px-12 rounded-lg text-2xl shadow-lg hover:shadow-xl transform hover:scale-105 block sm:inline-block">
+                    <i class="fas fa-shopping-cart mr-2"></i> Quero Me Inscrever Agora!
+                </a>
+                <p class="mt-4 text-sm text-slate-500">Vagas limitadas nesta condição especial.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="garantia" class="py-16 sm:py-24 bg-white px-6">
+        <div class="container mx-auto max-w-3xl text-center">
+            <div class="bg-slate-800 text-white p-8 sm:p-12 rounded-lg shadow-xl">
+                <i class="fas fa-shield-alt text-6xl highlight-yellow mb-6"></i>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Sua Satisfação <span class="highlight-yellow">Garantida</span> ou seu Dinheiro de Volta!</h2>
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    Você tem <strong>7 dias completos</strong> para explorar todo o conteúdo do curso "PDCA na Prática".
+                    Se, por qualquer motivo, você sentir que o curso não atendeu às suas expectativas, basta nos enviar um e-mail e nós devolveremos <strong>100% do seu investimento</strong>. Sem burocracia, sem perguntas, sem ressentimentos. O risco é todo nosso!
+                </p>
+                <p class="text-md text-gray-400">Queremos alunos satisfeitos e transformados pelo método.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-16 sm:py-24 bg-gray-100 px-6">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-12">O que nossos alunos <span class="text-blue-600">estão dizendo</span>:</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-left hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/FFC107/1E2A38?text=JA" alt="Foto Aluno 1" class="w-12 h-12 rounded-full mr-4 border-2 border-yellow-500">
+                        <div>
+                            <h4 class="font-bold text-slate-800">Juliana A.</h4>
+                            <p class="text-sm text-slate-500">Gerente de Projetos</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 italic">"Simples, direto e poderoso. Apliquei os conceitos em menos de 2 semanas e já vi melhorias nos processos da minha equipe. Recomendo!"</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-left hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/007BFF/FFFFFF?text=MP" alt="Foto Aluno 2" class="w-12 h-12 rounded-full mr-4 border-2 border-blue-600">
+                        <div>
+                            <h4 class="font-bold text-slate-800">Marcos P.</h4>
+                            <p class="text-sm text-slate-500">Empreendedor</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 italic">"Deixei de improvisar e finalmente tenho um processo claro para seguir. O curso me deu a confiança que faltava para gerenciar meu negócio."</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-left hover:shadow-xl transition-shadow">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/1E2A38/FFFFFF?text=CS" alt="Foto Aluno 3" class="w-12 h-12 rounded-full mr-4 border-2 border-slate-800">
+                        <div>
+                            <h4 class="font-bold text-slate-800">Carla S.</h4>
+                            <p class="text-sm text-slate-500">Líder de Equipe</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 italic">"Meu time entendeu, aplicou e melhorou com facilidade. A didática do João é excelente e os materiais de apoio são muito úteis."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 sm:py-24 bg-white px-6">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-12 text-center">Perguntas <span class="text-blue-600">Frequentes</span></h2>
+            <div class="space-y-6">
+                <details class="group bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <summary class="font-semibold text-lg text-slate-800 cursor-pointer flex justify-between items-center">
+                        Preciso ter uma empresa para fazer esse curso?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-slate-700 mt-4 leading-relaxed">Não! O PDCA é um método de gestão que pode ser aplicado em projetos pessoais, na sua carreira, para organizar estudos, ou em qualquer situação que precise de planejamento e melhoria contínua, além de empresas de todos os tamanhos.</p>
+                </details>
+                <details class="group bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <summary class="font-semibold text-lg text-slate-800 cursor-pointer flex justify-between items-center">
+                        Não sou da área de gestão, vou entender o conteúdo?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-slate-700 mt-4 leading-relaxed">Com certeza! O curso foi desenhado com uma linguagem simples e direta, focada na aplicação prática. Mesmo que você não tenha experiência prévia com gestão, conseguirá acompanhar e aplicar os ensinamentos.</p>
+                </details>
+                <details class="group bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <summary class="font-semibold text-lg text-slate-800 cursor-pointer flex justify-between items-center">
+                        Por quanto tempo terei acesso ao conteúdo?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-slate-700 mt-4 leading-relaxed">O acesso ao curso "PDCA na Prática" é vitalício! Você poderá assistir às aulas, baixar os materiais e consultar o conteúdo sempre que precisar, sem prazo de validade.</p>
+                </details>
+                <details class="group bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <summary class="font-semibold text-lg text-slate-800 cursor-pointer flex justify-between items-center">
+                        Posso aplicar o PDCA em uma equipe pequena ou até mesmo sozinho?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-slate-700 mt-4 leading-relaxed">Sim! O PDCA é escalável. Ele funciona tanto para grandes corporações quanto para pequenas equipes, microempreendedores ou até mesmo para gestão de tarefas individuais. O curso mostrará como adaptar o método à sua realidade.</p>
+                </details>
+                 <details class="group bg-gray-100 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <summary class="font-semibold text-lg text-slate-800 cursor-pointer flex justify-between items-center">
+                        Como funciona o suporte do curso?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-slate-700 mt-4 leading-relaxed">Você terá acesso a um grupo exclusivo de alunos, onde poderá tirar dúvidas diretamente com o instrutor João Junior e interagir com outros participantes, trocando experiências e aprendizados.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-800 text-gray-300 py-16 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8 mb-10 text-center md:text-left">
+                <div>
+                    <h5 class="text-xl font-bold text-white mb-4">PDCA na Prática</h5>
+                    <p class="text-sm">Transformando gestão em resultados reais.</p>
+                    <p class="text-sm mt-2">Instrutor: João Junior</p>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold text-white mb-4">Links Úteis</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#termos" class="hover:text-yellow-400 transition-colors">Termos de Uso</a></li>
+                        <li><a href="#privacidade" class="hover:text-yellow-400 transition-colors">Política de Privacidade</a></li>
+                        <li><a href="#suporte" class="hover:text-yellow-400 transition-colors">Suporte ao Aluno</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold text-white mb-4">Conecte-se</h5>
+                    <div class="flex space-x-4 justify-center md:justify-start text-2xl mb-4">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://wa.me/SEUNUMERODOWHATSAPP?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20o%20curso%20PDCA%20na%20Prática." target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-500 text-slate-800 font-semibold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors text-sm">
+                        <i class="fab fa-whatsapp mr-2"></i> Fale Conosco no WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; <span id="currentYear"></span> PDCA na Prática. Todos os direitos reservados.</p>
+                <p>Este site não é afiliado ao Facebook ou qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para botão "Voltar ao Topo"
+        const toTopBtn = document.getElementById('toTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                toTopBtn.style.opacity = "1";
+            } else {
+                toTopBtn.style.opacity = "0";
+            }
+        };
+        toTopBtn.addEventListener('click', () => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+
+        // Atualizar ano no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll para âncoras (já tratado com `scroll-smooth` no HTML, mas pode ser útil para JS fallbacks ou mais controle)
+        // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        //     anchor.addEventListener('click', function (e) {
+        //         e.preventDefault();
+        //         const targetId = this.getAttribute('href');
+        //         const targetElement = document.querySelector(targetId);
+        //         if(targetElement) {
+        //             targetElement.scrollIntoView({
+        //                 behavior: 'smooth'
+        //             });
+        //         }
+        //     });
+        // });
+    </script>
+
+</body>
+</html>
